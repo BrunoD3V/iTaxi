@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container-fluid {
+	background-color:black;
+}
+
+.header > .col-lg-6 {
+	top: 15px;
+}
+
+.fundo { 
+	background-image: url('fundo.jpg');
+	background-repeat: no-repeat;
+    background-position: center;
+	height:500px;  
+}
+
+.footer {
+	text-align:center;
+	color:#A3A3A3;
+	font-size:10px;
+	font-family:allerta;
+}
+#tarifas{
+	color:#FC4;
+}
+#txtempresa{
+	color:#FC4;
+}
+#logo {
+	top:-10px;
+}
+#letrasmap{
+	color:#FC4;
+}
+body{
+	
+	background-color: #CCC;
+}
+
+#empresa {
+	width:100%;
+}
+
+button {
+	top:20px;
+}
+
+/* Flexible iFrame */
+
+.Flexible-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.Flexible-container iframe,   
+.Flexible-container object,  
+.Flexible-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#login {
+	color:#FC0;
+}
+
+#button-login {
+	color:#000;
+}
+
+#legenda-login {
+	font-size:30px;
+	color:#FC0;
+}
+
+#input-username{
+	color:#000;
+}
+
+#input-password{
+	color:#000;
+}
+#ResetPass{
+	color:#000;
+}
+
+
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+#img{
+	padding: 15px;
+	text-align: center;
+}
+
+#imageempresa{
+	width:100%;
+}
+#labelContactos{
+	color:#FC0;
+	font-size:36px;
+}
+#paragContactos{
+	color:#FC0;
+}
+#TextPanelHeadAreaCliente{
+	color:#000;
+	font-size: 30px;
+}
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
+.thumbnail{
+	border: 0px;
+	background-color:#FC4;
+	text-align: center;
+}
+.btn-primary{
+	background-color: black;
+
+}
+.jumbotron{
+	background-color:#FC4;
+	background-image:url(.../images/taxi22.png);
+	color:#000;
+}
+
+#logoutmessage {
+	text-align:center;
+	color:#fc4;
+}
+
+#logoutmessage > a {
+	color:#fc4;
+}
+
+#acessorestrito {
+	color:#fc4;
+	text-align:center;
+}
+
+#logado {
+	color:#fc4;
+	text-align:center;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
+background-color:#fc4;
+text-decoration: none;
+color:black;
+}
+
+.nav {
+	color:white;
+}
+
+#recpass {
+	text-align:center;
+	color:#fc4;
+}
+
+#cc {
+	text-align:center;
+	color:#fc4;
+}
+
+#userinvalido{
+	text-align:center;
+	color:#fc4;
+}
+
+#dadosincorrecto{
+	text-align:center;
+	color:#fc4;
+}
+#img2{
+	text-align: center;
+}
+
+.h1centro{
+	text-align: center;
+}
+
+#pid1{
+	text-align: center;
+}
+
+#map{
+	text-align: center;
+}
+
+#sectionid1{
+	text-align:center;
+}
+
+#paypal{
+	text-align: center;
+	width: 1px;
+	height: 1px;
+	border: 0px;
+}
+
+#divHistorico{
+	text-align: center;
+}
+
+#footerid{
+	text-align: center;
+}
+#bemvindo{
+	color: #FC4;
+}
+#mapholder{
+	position: relative;
+	width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contactos{
+	text-align:center;
+}
+#mapalhao{
+	text-align: center;
+}
+.embed-responsive {
+	text-align: center;
+}
