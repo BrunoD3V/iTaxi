@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8" />
+        <title>Geolocalização</title>
+		
+
+    </head>
+    <body>
+ 
+<p>Taxistas em serviço:</p>
+		<script type="text/javascript">
+		// <![CDATA[
+            if (navigator.geolocation) {
+ 
+                // Se conseguir fazer a leitura, chama a função posicao(). Se não conseguir, chama a função erro()
+                navigator.geolocation.getCurrentPosition(posicao, erro);
+            } else {
+                alert('Seu navegador não tem suporte a geolocalização');
+            }
+ 
+            // Função chamada quando navigator.geolocation.getCurrentPosition CONSEGUE fazer a leitura
+            function posicao(dados) {
+ 
+                // Minhas coordenadas
+                lat = dados.coords.latitude;
+                lon = dados.coords.longitude;
+ 
+                // Taxis
+                taxis = new Array();
+ 
+                taxi1 = new Array();
+                taxi1[0] = 'Taxista Albino';
+                taxi1[1] = '41.485503';
+                taxi1[2] = '-7.178267';
+                taxis[0] = taxi1;
+				
+				taxi2 = new Array();
+				taxi2[0] = 'Taxista Belchior';
+				taxi2[1] = '41.484266';
+				taxi2[2] = '-7.183391';
+				taxis[1] = taxi2;
+				
+				taxi3 = new Array();
+				taxi3[0] = 'Taxista Bruninho';
+				taxi3[1] = '41.481611';
+				taxi3[2] = '-7.181915';
+				taxis[2] = taxi3
+ 
+               
+ 
+                // cria uma lista descritiva para os taxis
+                lista = document.createElement('dl');
+ 
+				
+                // Percorre os taxis
+                for (a = 0; a < taxis.length; a++) {
+ 
+                    // nome taxi na lista
+                    dt = document.createElement('dt');
+                    dt.appendChild(document.createTextNode(taxis[a][0]));
+                    lista.appendChild(dt);
+					
+						
+                    // tempo de demora
+                    dd = document.createElement('dd');
+                    dd.appendChild(document.createTextNode(distancia(lat, lon, taxis[a][1], taxis[a][2]) + ' minutos para chegar ao seu local'));
+                    lista.appendChild(dd);
+	
+					
+                }
+				
+                // Mostra a lista no ecra
+                document.getElementsByTagName('body')[0].appendChild(lista);
+				
+				
+            }
+			
+			
+            // Função chamada quando navigator.geolocation.getCurrentPosition NÃO consegue fazer a leitura
+            function erro(dados) {
+                switch (dados.code) {
+                    case 1: 
+                        alert('Você negou o acesso à sua localização!');
+                        break;
+                    case 2: 
+                        alert('Não foi possível acessar sua posição!');
+                        break;
+                    case 3: 
+                        alert('Timeout ao tentar pegar sua localização!');
+                        break;
+                }
+            }
+ 
+            // Calcula a distância em km entre dois pontos
+            function distancia(latA, lonA, latB, lonB) {
+                var tempo=(6371 * Math.acos(Math.cos(Math.PI * (90 - latB) / 180) * Math.cos(Math.PI * (90 - latA) / 180) + Math.sin(Math.PI * (90 - latB) / 180) * Math.sin(Math.PI * (90 - latA) / 180) * Math.cos(Math.PI * (lonA - lonB) / 180)))*(6/5);
+				return tempo.toFixed(2);
+			}
+			
+// ]]></script>
+    </body>
+</html>
